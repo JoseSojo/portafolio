@@ -12,7 +12,7 @@ export const SectionProjects: React.FC<SectionProjectsProps> = ({sec}) => {
             <div className='rounded-lg'>
               <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 w-full'>
                 {
-                    proyects.map((p,i) => (
+                    proyects.map((p) => (
                         <CardId titleId={sec}>
                             <div className='rounded-lg'>
                                 <img src={p.previw} className='w-full h-64 object-cover rounded-lg' />
