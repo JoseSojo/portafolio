@@ -15,7 +15,7 @@ import DJANGO from '../assets/django.png';
 import PREWVIEW_FINANZAS from '../assets/preview_finanzas.png';
 import PREWVIEW_CRUD from '../assets/preview_task.png';
 import PREWVIEW_DEXTER2 from '../assets/preview_dexter2.jpg';
-import PREWVIEW_DEXTER from '../assets/preview_dexter2.jpg';
+import PREWVIEW_DEXTER from '../assets/preview_dexter.jpg';
 
 if(false) console.log(PREWVIEW_DEXTER)
 
