@@ -7,7 +7,7 @@ import { SectionAboutMe } from './sections/SectionAboutMe';
 
 export const Header = () => {
     return (
-        <header className='w-full mx-auto h-auto md:pl-16 flex justify-center flex-col mb-10'>
+        <header id='header_about' className='w-full mx-auto h-auto md:pl-16 flex justify-center flex-col mb-10'>
             <h1 className='first-letter:text-cyan-400 text-[90px] font-extrabold'>José Sojo</h1>
             <p className='text-xl text-gray-700 font-bold'>Programador junior</p>
 

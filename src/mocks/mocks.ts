@@ -15,9 +15,6 @@ import DJANGO from '../assets/django.png';
 import PREWVIEW_FINANZAS from '../assets/preview_finanzas.png';
 import PREWVIEW_CRUD from '../assets/preview_task.png';
 import PREWVIEW_DEXTER2 from '../assets/preview_dexter2.jpg';
-import PREWVIEW_DEXTER from '../assets/preview_dexter.jpg';
-
-if(false) console.log(PREWVIEW_DEXTER)
 
 export const skils = [
   HTML,
@@ -52,6 +49,6 @@ export const proyects = [
     preview:PREWVIEW_DEXTER2,
     title:'POKEDEX',
     tecnologies:[REACT,TS,Tailwind],
-    url:'dexter-theta.verlce.app'
+    url:'https://dexter-theta.vercel.app'
   }
 ]
