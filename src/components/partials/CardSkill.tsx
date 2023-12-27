@@ -10,7 +10,7 @@ export const CardSkil = ({ico, skil}: CardIDProps) => {
         group-hover:-translate-y-5 group-hover:scale-100 scale-125 duration-200 mb-5 translate-y-5
         `
     
-    const clsSection = `group w-full bg-gray-950 rounded-md flex flex-col items-center` 
+    const clsSection = `group w-full bg-gray-100 rounded-xl flex flex-col items-center` 
 
     return (
         <section className={clsSection}>
