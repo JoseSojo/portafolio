@@ -6,7 +6,7 @@ interface CardIDProps {
 
 export const CardSkil = ({ico, skil}: CardIDProps) => {
     const clsImg = `
-        ${skil == 'NPM' ? 'h-16 w-28' : 'h-16'}
+        ${skil == 'NPM' ? 'lg:h-16 h-11 w-20 lg:w-28' : 'lg:h-16 h-11'}
         group-hover:-translate-y-5 group-hover:scale-100 scale-125 duration-200 mb-5 translate-y-5
         `
     
