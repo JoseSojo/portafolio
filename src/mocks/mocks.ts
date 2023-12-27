@@ -14,6 +14,7 @@ import DJANGO from '../assets/django.png';
 
 import PREWVIEW_FINANZAS from '../assets/preview_finanzas.png';
 import PREWVIEW_CRUD from '../assets/preview_task.png';
+import PREWVIEW_DEXTER from '../assets/preview_dexter.jpg';
 
 
 export const skils = [
@@ -44,5 +45,11 @@ export const proyects = [
     title:'App Finanzas',
     tecnologies:[REACT,TS,Tailwind],
     url:'https://finanzas-app-sigma.vercel.app/'
+  },
+  {
+    preview:PREWVIEW_DEXTER,
+    title:'POKEDEX',
+    tecnologies:[REACT,TS,Tailwind],
+    url:'dexter-theta.verlce.app'
   }
 ]
