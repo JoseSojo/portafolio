@@ -14,12 +14,12 @@ export const Body = () => {
     return (
         <>
         <div className='bg-gray-400 rounded-xl p-4 grid grid-cols-1 lg:grid-cols-2 gap-8 mt-5'>
-            <div onClick={()=> setPag(2)} className='group flex justify-center items-center w-full h-[250px] rounded-3xl' style={{ backgroundImage:`url(${SCREEN2})` }}>
+            <div onClick={()=> setPag(2)} className='group flex justify-center items-center w-full h-[250px] rounded-3xl' style={{ backgroundImage:`url(${SCREEN2})`, backgroundRepeat:'no-repeat', backgroundSize:'100% 100%' }}>
                 <p style={{textShadow: '0 0 3px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000'}} className=' group-hover:scale-125 group-hover:rotate-6 duration-200 text-gray-50 font-extrabold text-xl lg:text-4xl font-mono' >
                     Mis Habilidades
                 </p>
             </div>
-            <div onClick={()=> setPag(3)} className='group flex justify-center items-center w-full h-[250px] rounded-3xl' style={{ backgroundImage:`url(${SCREEN4})` }}>
+            <div onClick={()=> setPag(3)} className='group flex justify-center items-center w-full h-[250px] rounded-3xl' style={{ backgroundImage:`url(${SCREEN4})`, backgroundRepeat:'no-repeat', backgroundSize:'100% 100%' }}>
                 <p style={{textShadow: '0 0 3px #000, 0 0 5px #000, 0 0 5px #000, 0 0 5px #000'}} className='group-hover:scale-125 group-hover:rotate-6 duration-200 text-gray-50 font-extrabold text-xl lg:text-4xl font-mono' >
                     Mis Proyectos
                 </p>
