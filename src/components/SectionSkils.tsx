@@ -8,7 +8,7 @@ export const SectionSkils = () => {
     return (
       <section className='w-full flex justify-center items-center flex-col md:pr-10'>
         <h2 className='first-letter:text-cyan-400 font-bold text-2xl'>Mis tecnologías favoritas</h2>
-        <div className='bg-gray-400 p-5 w-full rounded-md mt-3 gap-y-8 flex justify-center gap-x-5'>
+        <div className='bg-gray-400 p-5 w-full rounded-md mt-3 gap-y-8 grid grid-cols-1 md:grid-cols-3 gap-5'>
           <CardSkil ico={REACT} skil='React' />
           <CardSkil ico={Tailwind} skil='Tailwind css' />
           <CardSkil ico={TS} skil='TypeScript' />
