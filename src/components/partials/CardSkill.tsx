@@ -1,0 +1,25 @@
+
+interface CardIDProps {
+    ico: any,
+    skil: string,
+}
+
+export const CardSkil = ({ico, skil}: CardIDProps) => {
+    const clsImg = `
+        ${skil == 'NPM' ? 'h-16 w-28' : 'h-16'}
+        group-hover:-translate-y-5 group-hover:scale-100 scale-125 duration-200 mb-5 translate-y-5
+        `
+    
+    const clsSection = `group w-full bg-gray-950 rounded-md flex flex-col items-center` 
+
+    return (
+        <section className={clsSection}>
+            <img 
+                src={ico} 
+                className={clsImg}
+                />
+            <span className='font-bold text-xl scale-0 group-hover:scale-100 -translate-y-5 duration-300'>{skil}</span>
+            <b></b>
+        </section>
+    );
+}

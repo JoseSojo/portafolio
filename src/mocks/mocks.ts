@@ -12,6 +12,9 @@ import EXPRESS from '../assets/express.png';
 import NPM from '../assets/npm.png';
 import DJANGO from '../assets/django.png';
 
+import PREWVIEW_FINANZAS from '../assets/preview_finanzas.png';
+import PREWVIEW_CRUD from '../assets/preview_task.png';
+
 
 export const skils = [
   HTML,
@@ -30,12 +33,16 @@ export const skils = [
 ]
 
 export const proyects = [
-    {
-        previw: DJANGO,
-        title: 'Ecommerse con React',
-        url: 'https://e-commerse-steel.vercel.app',
-        description: 'Tienda (fronent) hecha con react y typescript consumiendo una API externa',
-        skils: [TS,REACT],
-        details: ['Estado Global', 'Carrito de compras', 'Consumo de API', 'Filtros por categoría']
-    }
+  {
+    previw:PREWVIEW_CRUD,
+    title:'CRUD',
+    tecnologies:[REACT,TS,Tailwind],
+    url:'https://react-crud-seven-lake.vercel.app/'
+  },
+  {
+    previw:PREWVIEW_FINANZAS,
+    title:'App Finanzas',
+    tecnologies:[REACT,TS,Tailwind],
+    url:'https://finanzas-app-sigma.vercel.app/'
+  }
 ]
