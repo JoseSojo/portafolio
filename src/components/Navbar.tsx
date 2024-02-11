@@ -2,7 +2,7 @@ import { ImMeter, ImAccessibility, ImMug, ImBubble2, ImFileText2 } from "react-i
 import { SocialMedia } from "./partials/SocialMedia";
 import { useApp } from "../context/AppContext";
 import { FC } from "react";
-import CV from '../assets/cv.jpg';
+import CV from '../assets/cv.pdf';
 
 interface Props {
     responsive: boolean
