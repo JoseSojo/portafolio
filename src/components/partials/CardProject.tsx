@@ -1,6 +1,6 @@
 
 interface Props {
-    preview: string,
+    preview?: string | null,
     title: string,
     tecnologies?: string[],
     url: string | null,
@@ -15,7 +15,11 @@ export const CardProject: React.FC<Props> = ({ preview, title, description, tecn
             className="relative w-full rounded-xl border border-white dark:border-black grid grid-cols-[.6fr_1fr]"
         >
             <div className="relative h-56 overflow-hidden rounded-l-xl">
-                <img src={preview} className='w-full h-full' />
+                {
+                    preview 
+                    ? <img src={preview} className='w-full h-full' />
+                    : <div className='w-full h-full flex justify-center items-center bg-white dark:bg-gray-900 font-extralight text-3xl'>sistema privado</div>
+                }
             </div>
             <div className='flex justify-center items-center flex-col'>
                 <div className="p-6">

@@ -15,7 +15,7 @@ import ALCALDIA1 from '../assets/previws/alcaldia_1.png';
 import JGR1 from '../assets/previws/jgr_1.jpg';
 
 interface Proyects {
-    preview: string,
+    preview?: string | null,
     titulo: string,
     description: string,
     role: string,
@@ -26,7 +26,6 @@ interface Proyects {
 export const Works: Proyects[] = [
     {
         id:'1',
-        preview: ALCALDIA1,
         titulo: 'Sistema de muebles, inmuebles y vehículos',
         role: 'Unico Desarrollador',
         url: null
