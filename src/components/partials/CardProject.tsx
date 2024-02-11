@@ -12,7 +12,7 @@ export const CardProject: React.FC<Props> = ({ preview, title, description, tecn
 
     return (
         <div 
-            className="relative w-full rounded-xl border border-white dark:border-black grid grid-cols-[.6fr_1fr]"
+            className="relative w-full rounded-xl border border-white dark:border-black grid grid-cols-1 lg:grid-cols-[.6fr_1fr]"
         >
             <div className="relative h-56 overflow-hidden rounded-l-xl">
                 {
@@ -30,7 +30,7 @@ export const CardProject: React.FC<Props> = ({ preview, title, description, tecn
                         {
                             tecnologies
                             ? tecnologies.map((item,i) => (
-                                <img src={item} className='w-11 h-auto' key={`key-${item}-pw-${i}`} />
+                                <img src={item} className='w-6 h-auto' key={`key-${item}-pw-${i}`} />
                             ))
                             : <p className='text-gray-400 text-sm font-bold'>sistema privado</p>
                         }
