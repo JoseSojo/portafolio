@@ -1,14 +1,16 @@
 import SCREEN1 from '../../assets/uifaces-cartoon-image (20).jpg'
 import { SocialMedia } from "../partials/SocialMedia";
 import { FAVORITE_SKILS } from '../../definitions/skills.d';
-import { SectionWorks } from './SectionsWork';
+// import { SectionWorks } from './SectionsWork';
 import { CopyEmail } from '../partials/CopyEmail';
+import { SectionContact } from './SectionContact';
 
 interface Props {}
 
 export const SectionAboutMe: React.FC<Props> = ({}) => {
     
     return (
+        <>
         <section className='p-5 lg:p-10 grid grid-rows-[auto_1fr] gap-y-5 relative z-10'>
             <div className='
                 w-full h-auto max-h-auto 
@@ -24,7 +26,7 @@ export const SectionAboutMe: React.FC<Props> = ({}) => {
                     </header>
                     <p className='font-montserrat text-lg text-gray-900 dark:text-gray-200 text-center font-light'>
                         ¡Hola! Soy <strong>José Sojo</strong>, un programador web Javascript con 
-                        <strong>+1 año de experiencia.</strong> siempre buscando nuevas formas de 
+                        <strong> experiencia en el desarrollo web <span className='font-bold'>fronet y backend</span>.</strong> siempre buscando nuevas formas de 
                         convertir ideas en realidad. <strong>¡Hagamos que tus ideas 
                         cobren vida! ✨</strong>
                     </p>
@@ -45,23 +47,15 @@ export const SectionAboutMe: React.FC<Props> = ({}) => {
 
                         <CopyEmail />
 
-                        <footer className='grid grid-cols-[auto_auto_1fr] gap-x-5 text-4xl'>
+                        <footer className='grid grid-cols-4 place-items-center gap-x-5 text-4xl'>
                             <SocialMedia />
                             <button></button>
                         </footer>
                 </div>
             </div>
-
-            <div className='grid gird-cols-1 gap-5'>
-                
-
-            <div className='w-full h-auto max-h-auto bg-slate-300 dark:bg-gray-700 rounded-xl p-5'>
-                <h3 className='font-bebas text-3xl text-center textgray-900 dark:text-gray-50 mb-5'>Trabajos Realizados</h3>
-                
-                    <SectionWorks />
-                </div>
-            </div>
-
         </section>
+
+        <SectionContact />
+        </>
     )
 }

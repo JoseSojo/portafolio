@@ -1,8 +1,9 @@
-import { ImMeter, ImAccessibility, ImMug, ImBubble2, ImFileText2 } from "react-icons/im";
-import { SocialMedia } from "./partials/SocialMedia";
+import { ImAccessibility, ImMug, ImFileText2 } from "react-icons/im";
+// import { SocialMedia } from "./partials/SocialMedia";
 import { useApp } from "../context/AppContext";
 import { FC } from "react";
 import CV from '../assets/cv.pdf';
+import { DownloadCv } from "./partials/DownloadCV/DownloadCV";
 
 interface Props {
     responsive: boolean
@@ -26,20 +27,20 @@ export const Navbar: FC<Props> = ({responsive}) => {
                     Presentación 
                 </li>
 
-                <li onClick={()=>app.setPayload('PROJECTS')} className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${app.payload === 'PROJECTS' ? ActiveCls : DisactiveCls}`}>
+                {/* <li onClick={()=>app.setPayload('PROJECTS')} className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${app.payload === 'PROJECTS' ? ActiveCls : DisactiveCls}`}>
                     <ImMeter />
                     Proyectos
-                </li>
+                </li> */}
                 
                 <li onClick={()=>app.setPayload('SKILS')} className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${app.payload === 'SKILS' ? ActiveCls : DisactiveCls}`}>
                     <ImAccessibility />
                     Habilidades
                 </li>
                 
-                <li onClick={()=>app.setPayload('CONTACT')} className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${app.payload === 'CONTACT' ? ActiveCls : DisactiveCls}`}>
+                {/* <li onClick={()=>app.setPayload('CONTACT')} className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${app.payload === 'CONTACT' ? ActiveCls : DisactiveCls}`}>
                     <ImBubble2 />
                     Contacto
-                </li>
+                </li> */}
 
                 <a href={CV} target='_blank' className={`border-b-2 border-slate-400 dark:border-slate-950 hover:rounded-lg ${DisactiveCls}`}>
                     <ImFileText2 />
@@ -47,7 +48,8 @@ export const Navbar: FC<Props> = ({responsive}) => {
                 </a>
 
                 <li className={`text-4xl flex gap-x-5`}>
-                    <SocialMedia />
+                    <DownloadCv />
+                    {/* <SocialMedia /> */}
                 </li>
             </ul>
         </nav>

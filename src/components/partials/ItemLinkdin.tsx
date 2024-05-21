@@ -2,7 +2,9 @@
 export const ItemLinkedin = () => {
 
     return (
-        <button
+        <a
+            href="https://www.linkedin.com/in/jose-sojo-jaimes-1a9ab7291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
             className="group flex justify-center items-center gap-2 group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-blue-900 duration-500 hover:duration-500 underline underline-offset-2 hover:underline hover:underline-offset-4 origin-left hover:decoration-2 hover:text-neutral-300 relative bg-cyan-600 px-10 py-4 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden after:absolute after:z-10 after:w-12 after:h-12 after:content[''] after:bg-sky-900 after:-left-8 after:top-8 after:rounded-full after:blur-lg hover:after:animate-pulse"
             >
             <svg
@@ -20,6 +22,6 @@ export const ItemLinkedin = () => {
             ></path>
             </svg>
             Linkedin
-        </button>
+        </a>
     )
 }

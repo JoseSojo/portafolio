@@ -11,7 +11,7 @@ function App() {
       min-h-screen w-full 
       grid
       grid-cols-1 gird-rows-[auto_1fr_auto]
-      lg:grid-cols-[.5fr_1fr]
+      lg:grid-cols-[.3fr_1fr]
     '>
       
       <header className='col-span-3 lg:col-span-1  md:row-span-3 xl:rows-sapn-1 relative'>
